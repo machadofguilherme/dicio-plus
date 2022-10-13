@@ -1,0 +1,78 @@
+@import './variables'
+
+.app__header
+  width: 100vw,
+  height: 10vh,
+  background-color: $default-bg,
+  color: $default-extra,
+  display: flex,
+  justify-content: space-around,
+  align-items: center,
+  position: fixed,
+  top: 0,
+  @media (max-width: 810px)
+    height: 12vh,
+
+.app__logo
+  display: flex,
+  align-items: center,
+  gap: 10px,
+  font-size: 1.5em,
+  margin-right: 5em,
+  @media (max-width: 810px)
+    font-size: 1.7rem,
+    margin-right: 30px,
+  @media (max-width: 524px)
+    margin-right: 10px,
+    margin-left: 20px,
+  @media (max-width: 524px)
+    font-size: 1.3em,
+  @media (max-width: 334px)
+    font-size: 1em,
+
+  h2
+    font-size: 2.3em,
+    color: gold,
+
+.app__header-form
+  display: flex,
+  gap: 10px,
+  @media (max-width: 810px)
+    flex-direction: column,
+
+  input, button
+    height: 2.3em,
+    outline: none,
+    border: none,
+    border-radius: 5px,
+
+  input
+    width: 25em,
+    @media (max-width: 810px)
+      height: 50%,
+      width: 90%,
+    @media (max-width: 388px)
+      width: 90%,
+      &::placeholder
+        font-size: 75%,
+    @media (max-width: 310px)
+      width: 90%,
+      height: 1.4em,
+      &::placeholder
+        font-size: 65%,
+        text-align: center,
+
+
+  button
+    width: 10em,
+    cursor: pointer,
+    color: $default-text,
+    @media (max-width: 810px)
+      height: 50%,
+      width: 90%,
+    @media (max-width: 388px)
+      font-size: 75%,
+    @media (max-width: 310px)
+      font-size: 65%,
+      font-weight: 600,
+      height: 1.7em,

@@ -1,0 +1,130 @@
+@import './variables'
+
+.app__main
+  display: flex,
+  height: 85vh,
+  justify-content: space-evenly,
+  align-items: flex-start,
+  padding: 50px 0,
+  color: $default-bg,
+  margin-top: 50px,
+  overflow-x: auto,
+  @media (max-width: 693px)
+    flex-direction: column,
+    justify-content: center,
+    align-items: center,
+
+.app__word
+  width: 30em,
+  @media (max-width: 693px)
+    margin-top: 85%,
+  @media (max-width: 591px)
+    margin-top: 38em,
+  @media (max-width: 509px)
+    margin-top: 43em,
+  @media (max-width: 465px)
+    margin-top: 47em,
+  @media (max-width: 425px)
+    margin-top: 28em,
+  @media (max-width: 338px)
+    margin-top: 20em,
+
+
+
+.app__word, .app__info
+  display: flex,
+  flex-direction: column,
+  gap: 80px,
+  width: 33vw,
+  @media (max-width: 693px)
+    gap: 40px,
+    width: 50%,
+    max-width: 600px,
+  @media (max-width: 415px)
+    width: 75%,
+  @media (max-width: 375px)
+    width: 95%,
+  @media (max-width: 338px)
+    gap: 20px,
+    align-items: center,
+
+  h3
+    font-size: 2em,
+    text-transform: capitalize,
+    @media (max-width: 338px)
+      font-size: 1.5em,
+  
+  h4
+    font-size: 1.2em,
+    margin-bottom: 20px,
+    @media (max-width: 338px)
+      font-size: 1em,
+
+  p
+    text-transform: capitalize,
+  ul
+    padding-left: 50px,
+  li
+    list-style: circle,
+    @media (max-width: 338px)
+      font-size: .7em,
+
+
+.app__origin, .app__phrase
+  width: 80%,
+
+.app__list
+  margin-bottom: 10px,
+  width: 20em,
+  text-align: left,
+  @media (max-width: 944px)
+    width: 90%,
+  @media (max-width: 693px)
+    width: 90%,
+    text-align: center,
+  @media (max-width: 415px)
+    width: 15em,
+
+.app__phrase
+  text-align: right,
+  display: flex,
+  flex-direction: column,
+  gap: 20px,
+  width: 28vw,
+  @media (max-width: 693px)
+    width: 90%,
+    text-align: center,
+    margin-top: 20px,
+  @media (max-width: 415px)
+    width: 20em,
+  @media (max-width: 338px)
+    width: 13em,
+
+  h5
+    font-weight: 300,
+    @media (max-width: 338px)
+      font-size: .7em,
+  h6
+    font-weight: normal,
+
+.app__loading
+  display: flex,
+  justify-content: center,
+  align-items: center,
+  font-size: 2em,
+  height: 75vh,
+  width: 100vw,
+
+::-webkit-scrollbar
+  width: 10px,
+
+::-webkit-scrollbar-track
+  background: gold,
+
+::-webkit-scrollbar-thumb
+  background: $default-bg,
+  border-radius: 5px,
+  transition: all 500ms ease,
+
+::-webkit-scrollbar-thumb:hover
+  opacity: .9,

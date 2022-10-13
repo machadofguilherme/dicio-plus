@@ -1,0 +1,71 @@
+@import './variables'
+
+.notfound
+  display: flex,
+  flex-direction: column,
+  justify-content: center,
+  align-items: center,
+  height: 100vh,
+  width: 100vw,
+  color: $default-bg,
+  background-color: $dark-extra,
+
+.notfound section
+  display: flex,
+  flex-direction: column,
+  justify-content: center,
+
+  h1
+    font-size: 5em,
+    height: 1.2em,
+    font-weight: 700,
+    @media (max-width: 1138px)
+      font-size: 4em,
+    @media (max-width: 311px)
+      font-size: 3.8em,
+
+  h2
+    width: 15em,
+    text-align: center,
+    font-size: 1.3em,
+    font-weight: 500,
+    @media (max-width: 1138px)
+      font-size: 1em,
+
+  i
+    font-size: 5em,
+    margin: 10px,
+    display: flex,
+    justify-content: center,
+    // @media (max-width: 1138px)
+    //   font-size: 90%,
+
+  p
+    text-align: center,
+
+.back
+  height: 6vh,
+  width: 20vw,
+  border: none,
+  background-color: gold,
+  border-radius: 5px,
+  color: $default-bg,
+  cursor: pointer,
+  margin-top: 10px,
+  transition: all 500ms ease,
+  @media (max-width: 1138px)
+    width: 25vw,
+  @media (max-width: 936px)
+    width: 30vw,
+  @media (max-width: 936px)
+    width: 35vw,
+  @media (max-width: 585px)
+    width: 40vw,
+  @media (max-width: 473px)
+    width: 45vw,
+  @media (max-width: 407px)
+    width: 50vw,
+  @media (max-width: 311px)
+    width: 80vw,
+  &:hover
+    opacity: .8,
